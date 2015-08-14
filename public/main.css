@@ -37,3 +37,9 @@ select {
 #map {
     padding: 0px;
 }
+
+.title-row {
+    background-color: #45858E;
+    padding: 20px;
+    color: white;
+}

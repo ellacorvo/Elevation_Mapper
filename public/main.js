@@ -57,6 +57,7 @@ require([
                         profileTaskUrl: "https://elevation.arcgis.com/arcgis/rest/services/Tools/ElevationSync/GPServer",
                         scalebarUnits: Units.MILES
                     };
+                    console.log(profileParams);
                     epWidget = new ElevationsProfileWidget(profileParams, dom.byId("profileChartNode"));
                     epWidget.startup();
                 }

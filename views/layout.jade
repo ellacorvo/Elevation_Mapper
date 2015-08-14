@@ -5,12 +5,16 @@ html(lang='en')
 		title Elevation Mapper
 		link(rel="stylesheet" href="http://js.arcgis.com/3.14/dijit/themes/claro/claro.css")
 		link(rel="stylesheet" href="http://js.arcgis.com/3.14/esri/css/esri.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap-theme.css")
 		link(rel="stylesheet" href="main.css")
 		script
 			var dojoConfig = { parseOnLoad: true };
 
 	body
 	.claro
+		.container-fluid
+			.row
+				.col-xs-12.title-row View Elevation Changes
 		#info
 			label Digitize a route:
 			button#Polyline(type='button') Polyline
@@ -29,7 +33,7 @@ html(lang='en')
 			button#viewRoutes(type='button') View Routes
 		#mainContainer(data-dojo-type='dijit/layout/BorderContainer', data-dojo-props="design:'headline', gutters:true", style='width:100%;height:100%;')
 			#map(data-dojo-type='dijit/layout/ContentPane', data-dojo-props="region:'center'", style='height:100%;')
-			div(data-dojo-type='dijit/layout/ContentPane', data-dojo-props="region:'bottom'", style='background-color: #235F68;')
+			div(data-dojo-type='dijit/layout/ContentPane', data-dojo-props="region:'bottom'", style='background-color: #235F68;width:100%;')
 				#profileChartNode
 
 	script(src="http://js.arcgis.com/3.14compact/")
